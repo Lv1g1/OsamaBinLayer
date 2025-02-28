@@ -1,0 +1,14 @@
+0: cld 
+1: xor ebx, ebx
+3: mov eax, dword ptr fs:[rbx + 0x30]
+7: mov eax, dword ptr [rax + 0xc]
+10: mov edx, dword ptr [rax + 0x1c]
+13: mov edx, dword ptr [rdx]
+15: mov esi, dword ptr [rdx + 0x20]
+18: lodsd eax, dword ptr [rsi]
+19: lodsd eax, dword ptr [rsi]
+20: add r8, qword ptr [rsi]
+23: cmp eax, 0x325f3332
+28: jne 0xd
+30: mov ebp, dword ptr [rdx + 8]
+33: jo 0x6f

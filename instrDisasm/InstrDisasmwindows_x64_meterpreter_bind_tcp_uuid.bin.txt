@@ -1,0 +1,130 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+8: call 0xd9
+13: push r9
+15: push r8
+17: push rdx
+18: xor rdx, rdx
+21: mov rdx, qword ptr gs:[rdx + 0x60]
+26: mov rdx, qword ptr [rdx + 0x18]
+30: push rcx
+31: mov rdx, qword ptr [rdx + 0x20]
+35: push rsi
+36: mov rsi, qword ptr [rdx + 0x50]
+40: xor r9, r9
+43: movzx rcx, word ptr [rdx + 0x4a]
+48: xor rax, rax
+51: lodsb al, byte ptr [rsi]
+52: cmp al, 0x61
+54: jl 0x3a
+56: sub al, 0x20
+58: ror r9d, 0xd
+62: add r9d, eax
+65: loop 0x30
+67: push rdx
+68: push r9
+70: mov rdx, qword ptr [rdx + 0x20]
+74: mov eax, dword ptr [rdx + 0x3c]
+77: add rax, rdx
+80: cmp word ptr [rax + 0x18], 0x20b
+86: jne 0xce
+92: mov eax, dword ptr [rax + 0x88]
+98: test rax, rax
+101: je 0xce
+103: add rax, rdx
+106: mov r8d, dword ptr [rax + 0x20]
+110: add r8, rdx
+113: mov ecx, dword ptr [rax + 0x18]
+116: push rax
+117: jrcxz 0xcd
+119: sub al, 0x29
+121: xor r9, r9
+124: dec rcx
+127: mov esi, dword ptr [r8 + rcx*4]
+131: add rsi, rdx
+134: xor rax, rax
+137: lodsb al, byte ptr [rsi]
+138: ror r9d, 0xd
+142: add r9d, eax
+145: cmp al, ah
+147: jne 0x86
+149: add r9, qword ptr [rsp + 8]
+154: cmp r9d, r10d
+157: jne 0x77
+159: pop rax
+160: mov r8d, dword ptr [rax + 0x24]
+164: add r8, rdx
+167: mov cx, word ptr [r8 + rcx*2]
+172: mov r8d, dword ptr [rax + 0x1c]
+176: add r8, rdx
+179: mov eax, dword ptr [r8 + rcx*4]
+183: pop r8
+185: add rax, rdx
+188: pop r8
+190: pop rsi
+191: pop rcx
+192: pop rdx
+193: pop r8
+195: pop r9
+197: pop r10
+199: sub rsp, 0x20
+203: push r10
+205: jmp rax
+207: pop rax
+208: pop r9
+210: pop rdx
+211: mov rdx, qword ptr [rdx]
+214: jmp 0x26
+219: pop rbp
+220: movabs r14, 0x32335f327377
+230: push r14
+232: mov r14, rsp
+235: fsubp st(2)
+237: jmp 0x154
+239: sub rsp, 0x1a0
+246: mov r13, rsp
+249: xor rax, rax
+252: push rax
+253: push rax
+254: mov r12, 0x5c110002
+261: push r12
+263: mov r12, rsp
+266: mov rcx, r14
+269: mov r10d, 0x726774c
+275: call rbp
+277: mov rdx, r13
+280: push 0x101
+285: pop rcx
+286: mov r10d, 0x6b8029
+292: enter -0x7780, 0x72
+298: sub eax, 0x26ad5ff
+303: pop rcx
+304: push rax
+305: push rax
+306: xor r9, r9
+309: xor r8, r8
+312: inc rax
+315: mov rdx, rax
+318: mov r10d, 0xe0df0fea
+324: call rbp
+326: mov rdi, rax
+329: push 0x10
+331: pop r8
+333: mov rdx, r12
+336: mov rcx, rdi
+339: mov r10d, 0x6737dbc2
+345: call rbp
+347: xor rdx, rdx
+350: mov rcx, rdi
+353: mov r10d, 0xff38e9b7
+359: call rbp
+361: xor r8, r8
+364: xor rdx, rdx
+367: mov rcx, rdi
+370: mov r10d, 0xe13bec74
+376: call rbp
+378: mov rcx, rdi
+381: mov rdi, rax
+384: mov r10d, 0x614d6e75
+390: call rbp
+392: in eax, 0x71

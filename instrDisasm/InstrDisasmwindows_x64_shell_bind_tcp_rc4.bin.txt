@@ -1,0 +1,10 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+5: call 0xd6
+10: push r9
+12: push r8
+14: push rdx
+15: xor rdx, rdx
+18: push rcx
+19: add ebx, dword ptr [rdi - 0x3d5aeb74]
+25: push rbp

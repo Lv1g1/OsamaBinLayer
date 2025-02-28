@@ -1,0 +1,7 @@
+0: cld 
+1: xor edi, edi
+3: mov eax, dword ptr fs:[rdi + 0x30]
+7: mov eax, dword ptr [rax + 0xc]
+10: mov ebx, dword ptr [rax + 0x1c]
+13: mov ebx, dword ptr [rbx]
+15: mov bl, 0x65

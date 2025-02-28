@@ -1,0 +1,3 @@
+0: cld 
+1: xor ebx, ebx
+3: mov eax, dword ptr fs:[rbx + 0x30]

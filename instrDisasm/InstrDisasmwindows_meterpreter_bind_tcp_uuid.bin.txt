@@ -1,0 +1,3 @@
+0: cld 
+1: insd dword ptr [rdi], dx
+2: mov esi, 0x8fe8

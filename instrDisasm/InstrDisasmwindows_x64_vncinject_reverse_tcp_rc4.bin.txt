@@ -1,0 +1,29 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+5: call 0xd6
+10: push r9
+12: push r8
+14: push rdx
+15: stosd dword ptr [rdi], eax
+16: pop rdi
+17: push rcx
+18: xor rdx, rdx
+21: push rsi
+22: mov rdx, qword ptr gs:[rdx + 0x60]
+27: mov rdx, qword ptr [rdx + 0x18]
+31: mov rdx, qword ptr [rdx + 0x20]
+35: xor r9, r9
+38: mov rsi, qword ptr [rdx + 0x50]
+42: movzx rcx, word ptr [rdx + 0x4a]
+47: xor rax, rax
+50: lodsb al, byte ptr [rsi]
+51: cmp al, 0x61
+53: jl 0x39
+55: sub al, 0x20
+57: ror r9d, 0xd
+61: add r9d, eax
+64: loop 0x2f
+66: push rdx
+67: mov rdx, qword ptr [rdx + 0x20]
+71: mov eax, dword ptr [rdx + 0x3c]
+74: push r9

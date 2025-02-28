@@ -1,0 +1,4 @@
+0: cld 
+1: sub eax, 0x838481db
+6: call 0x9c
+13: mov r14d, ebp

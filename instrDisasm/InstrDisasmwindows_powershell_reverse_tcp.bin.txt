@@ -1,0 +1,4 @@
+0: cld 
+1: call 0x88
+6: and edx, dword ptr [rax - 0x1650dbe5]
+12: stosd dword ptr [rdi], eax

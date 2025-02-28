@@ -1,0 +1,38 @@
+0: call 0x5b
+5: push rbx
+6: push rbp
+7: push rsi
+8: push rdi
+9: mov ebp, dword ptr [rsp + 0x18]
+13: mov eax, dword ptr [rbp + 0x3c]
+16: mov edx, dword ptr [rbp + rax + 0x78]
+20: add edx, ebp
+22: mov ecx, dword ptr [rdx + 0x18]
+25: mov ebx, dword ptr [rdx + 0x20]
+28: add ebx, ebp
+30: jrcxz 0x52
+32: mov rsi, qword ptr [r11 + rcx*4]
+36: add esi, ebp
+38: xor edi, edi
+40: cld 
+41: xor eax, eax
+43: lodsb al, byte ptr [rsi]
+44: cmp al, ah
+46: je 0x37
+48: ror edi, 0xd
+51: add edi, eax
+53: jmp 0x29
+55: cmp edi, dword ptr [rsp + 0x14]
+59: jne 0x1e
+61: mov ebx, dword ptr [rdx + 0x24]
+64: add ebx, ebp
+66: mov cx, word ptr [rbx + rcx*2]
+70: mov ebx, dword ptr [rdx + 0x1c]
+73: add ebx, ebp
+75: mov eax, dword ptr [rbx + rcx*4]
+78: add eax, ebp
+80: jmp 0x54
+82: mov ebx, 0xc031ac67
+87: pop rdi
+88: pop rsi
+89: loopne 0x81

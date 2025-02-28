@@ -1,0 +1,18 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+5: movabs dword ptr [0x41000000cce8368f], eax
+14: push rcx
+15: push r8
+17: push rdx
+18: push rcx
+19: xor rdx, rdx
+22: push rsi
+23: mov rdx, qword ptr gs:[rdx + 0x60]
+28: mov rdx, qword ptr [rdx + 0x18]
+32: mov rdx, qword ptr [rdx + 0x20]
+36: xor r9, r9
+39: mov rsi, qword ptr [rdx + 0x50]
+43: movzx rcx, word ptr [rdx + 0x4a]
+48: xor rax, rax
+51: lodsb al, byte ptr [rsi]
+52: cmp al, 0x61

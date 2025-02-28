@@ -1,0 +1,4 @@
+0: cld 
+1: test al, 0xee
+3: enter 0x570f, 0x14
+7: sahf 

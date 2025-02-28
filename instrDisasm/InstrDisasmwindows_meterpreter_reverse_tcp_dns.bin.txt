@@ -1,0 +1,2 @@
+0: cld 
+1: sbb ch, byte ptr [rbx + 0x8fe8]

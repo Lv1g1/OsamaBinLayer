@@ -1,0 +1,9 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+8: call 0xd9
+13: push r9
+15: push r8
+17: push rdx
+18: xor rdx, rdx
+21: push rcx
+22: lodsd eax, dword ptr [rsi]

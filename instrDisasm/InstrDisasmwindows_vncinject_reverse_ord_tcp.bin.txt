@@ -1,0 +1,7 @@
+0: cld 
+1: xor ebx, ebx
+3: mov eax, dword ptr fs:[rbx + 0x30]
+7: mov eax, dword ptr [rax + 0xc]
+10: mov edx, dword ptr [rax + 0x1c]
+13: wait 
+14: scasd eax, dword ptr [rdi]

@@ -1,0 +1,3 @@
+0: cld 
+1: push -0x15
+3: call 2

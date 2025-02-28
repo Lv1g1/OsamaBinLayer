@@ -1,0 +1,100 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+5: call 0xd6
+10: adc esi, dword ptr [rdx + 0x41798575]
+16: push rcx
+17: push r8
+19: push rdx
+20: xor rdx, rdx
+23: push rcx
+24: push rsi
+25: mov rdx, qword ptr gs:[rdx + 0x60]
+30: mov rdx, qword ptr [rdx + 0x18]
+34: mov rdx, qword ptr [rdx + 0x20]
+38: movzx rcx, word ptr [rdx + 0x4a]
+43: mov rsi, qword ptr [rdx + 0x50]
+47: xor r9, r9
+50: xor rax, rax
+53: lodsb al, byte ptr [rsi]
+54: cmp al, 0x61
+56: jl 0x3c
+58: sub al, 0x20
+60: ror r9d, 0xd
+64: add r9d, eax
+67: loop 0x32
+69: push rdx
+70: push r9
+72: mov rdx, qword ptr [rdx + 0x20]
+76: mov eax, dword ptr [rdx + 0x3c]
+79: add rax, rdx
+82: cmp word ptr [rax + 0x18], 0x20b
+88: jne 0xd0
+94: mov eax, dword ptr [rax + 0x88]
+100: test rax, rax
+103: je 0xd0
+105: add rax, rdx
+108: push rax
+109: mov ecx, dword ptr [rax + 0x18]
+112: add byte ptr [rbx + rcx*4 + 0x40], al
+116: and byte ptr [rcx + 1], cl
+119: shl bl, 1
+121: push rsi
+122: dec rcx
+125: xor r9, r9
+128: mov esi, dword ptr [r8 + rcx*4]
+132: add rsi, rdx
+135: xor rax, rax
+138: lodsb al, byte ptr [rsi]
+139: ror r9d, 0xd
+143: add r9d, eax
+146: cmpsd dword ptr [rsi], dword ptr [rdi]
+147: cmp al, ah
+149: jne 0x88
+151: add r9, qword ptr [rsp + 8]
+156: add esp, edi
+158: xchg ecx, eax
+159: sub dword ptr [r9 + 0x45], r9d
+163: cmp ecx, edx
+165: jne 0x7f
+167: pop rax
+168: mov r8d, dword ptr [rax + 0x24]
+172: add r8, rdx
+175: mov cx, word ptr [r8 + rcx*2]
+180: mov r8d, dword ptr [rax + 0x1c]
+184: add r8, rdx
+187: mov eax, dword ptr [r8 + rcx*4]
+191: pop r8
+193: pop r8
+195: pop rsi
+196: pop rcx
+197: add rax, rdx
+200: pop rdx
+201: pop r8
+203: pop r9
+205: pop r10
+207: sub rsp, 0x20
+211: push r10
+213: loope 0x91
+215: fidivr word ptr [rdx + riz]
+218: mov ah, 0x5c
+220: jmp rax
+222: pop rax
+223: pop r9
+225: pop rdx
+226: mov rdx, qword ptr [rdx]
+229: jmp 0x35
+234: pop rbp
+235: xor rbx, rbx
+238: push rbx
+239: movabs r14, 0x74656e696e6977
+249: push r14
+251: mov rcx, rsp
+254: mov r10, 0x726774c
+261: call rbp
+263: push rbx
+264: push rbx
+265: call 0x185
+270: outsd dx, dword ptr [rsi]
+272: jp 0x17b
+274: insb byte ptr [rdi], dx
+275: insb byte ptr [rdi], dx

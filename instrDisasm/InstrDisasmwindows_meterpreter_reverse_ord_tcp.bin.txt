@@ -1,0 +1,7 @@
+0: cld 
+1: xor ebx, ebx
+3: mov eax, dword ptr fs:[rbx + 0x30]
+7: stosb byte ptr [rdi], al
+9: lodsb al, byte ptr [rsi]
+10: add ebp, esi
+12: mov dh, 0xfa

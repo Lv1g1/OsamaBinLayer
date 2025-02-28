@@ -1,0 +1,5 @@
+0: cld 
+1: xchg edx, eax
+2: cmc 
+3: push -0x15
+5: call 4

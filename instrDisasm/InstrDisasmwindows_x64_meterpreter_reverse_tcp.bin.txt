@@ -1,0 +1,30 @@
+0: pop r10
+2: push r10
+4: jrcxz 0x43
+6: push rbp
+7: mov rbp, rsp
+10: sub rsp, 0x20
+14: and rsp, 0xfffffffffffffff0
+18: call 0x17
+23: pop rbx
+24: add rbx, 0x60e3
+31: call rbx
+33: add rbx, 0x2b708
+40: scasd eax, dword ptr [rdi]
+41: mov r8, rbx
+44: push 4
+46: pop rdx
+47: call rax
+49: add byte ptr [rax], al
+51: add byte ptr [rax], al
+53: add byte ptr [rax], al
+55: add byte ptr [rax], al
+57: add byte ptr [rax], al
+59: add byte ptr [rax], al
+61: add byte ptr [rax], al
+63: clc 
+64: add byte ptr [rax], al
+66: add byte ptr [rax], 0xe
+69: push rsp
+70: sub cl, byte ptr [rsi + 0x62]
+73: or edi, dword ptr [rbx - 0x65]

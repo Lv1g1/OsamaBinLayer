@@ -1,0 +1,5 @@
+0: cld 
+1: call 0x95
+6: scasb al, byte ptr [rdi]
+8: hlt 
+9: in eax, 0x3f

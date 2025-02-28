@@ -1,0 +1,9 @@
+0: pop r10
+2: push r10
+4: push rbp
+5: mov rbp, rsp
+8: sub rsp, 0x20
+12: and rsp, 0xfffffffffffffff0
+16: call 0x15
+21: pop rbx
+22: add rbx, 0x60e3

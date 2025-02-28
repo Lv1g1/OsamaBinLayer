@@ -1,0 +1,15 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+5: call 0xd6
+10: push r9
+12: push r8
+14: sahf 
+15: pop rbx
+16: movsb byte ptr [rdi], byte ptr [rsi]
+17: push rdx
+18: push rcx
+19: push rsi
+20: xor rdx, rdx
+23: mov rdx, qword ptr gs:[rdx + 0x60]
+28: stc 
+29: pushfq 

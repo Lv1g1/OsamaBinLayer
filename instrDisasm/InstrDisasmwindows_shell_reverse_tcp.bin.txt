@@ -1,0 +1,6 @@
+0: cld 
+1: cli 
+2: pop rax
+3: in eax, 0x8c
+5: fild word ptr [rsi - 0x80]
+8: call 0x8f

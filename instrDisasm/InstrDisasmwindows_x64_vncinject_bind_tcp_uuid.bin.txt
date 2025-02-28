@@ -1,0 +1,6 @@
+0: cld 
+1: and rsp, 0xfffffffffffffff0
+8: call 0xd9
+13: mov bl, 0x7f
+15: mov dh, 0xe
+17: xchg byte ptr [rdi], dh

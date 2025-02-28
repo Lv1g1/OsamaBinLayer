@@ -1,0 +1,89 @@
+0: and sp, 0xfffc
+5: xor esi, esi
+7: mov esi, dword ptr fs:[rsi + 0x30]
+11: mov esi, dword ptr [rsi + 0xc]
+14: mov esi, dword ptr [rsi + 0x1c]
+17: push rsi
+18: mov si, 0x1aaa
+22: pop rdi
+23: mov ebp, dword ptr [rdi + 8]
+26: push qword ptr [rdi]
+28: mov ebx, dword ptr [rbp + 0x3c]
+31: mov ebx, dword ptr [rbp + rbx + 0x78]
+35: add ebx, ebp
+37: mov ecx, dword ptr [rbx + 0x18]
+40: jecxz 0x16
+43: mov edi, dword ptr [rbx + 0x20]
+46: add edi, ebp
+48: mov edi, dword ptr [rdi + rcx*4 - 4]
+52: add edi, ebp
+54: xor dword ptr [rcx], 0x173299c0
+60: ror dx, 1
+64: scasb al, byte ptr [rdi]
+65: jne 0x3a
+67: cmp dx, si
+71: je 0x51
+73: jecxz 0x17
+76: jmp 0x2c
+81: mov esi, dword ptr [rbx + 0x24]
+84: add esi, ebp
+86: movzx esi, word ptr [rsi + rcx*2]
+90: mov eax, dword ptr [rbx + 0x1c]
+93: add eax, ebp
+95: mov edi, dword ptr [rax + rsi*4]
+98: add edi, ebp
+100: xor esi, esi
+102: cmp dx, 0xf0da
+107: je 0x88
+109: cmp dx, 0x2769
+114: je 0x94
+116: push 0x32
+118: push 0x33656c6f
+123: push rsp
+124: call rdi
+126: xchg ebp, eax
+127: mov si, 0xf0da
+131: jmp 0x1d
+136: push rsi
+137: call rdi
+139: mov si, 0x2769
+143: jmp 0x1d
+148: push -0x2bddfb92
+153: push -0x6610135f
+158: push 0x499272b9
+163: push 0x6c44df74
+168: mov eax, esp
+170: push -0x698c86b1
+175: push -0x3ffe1c62
+180: dec dword ptr [rsp + 2]
+184: push 0x11d23391
+189: push -0x698b6c89
+194: mov ebx, esp
+196: push rsi
+197: push rsp
+198: push rax
+199: push 0x17
+201: push rsi
+202: push rbx
+203: call rdi
+205: pop rbx
+206: push 0x5520676f
+211: push 0x7420706f
+216: push 0x686e6421
+221: xchg esi, eax
+222: mov esi, esp
+224: push rax
+225: lodsb al, byte ptr [rsi]
+226: push ax
+228: cmp al, 0x55
+230: jne 0xe1
+232: mov ecx, esp
+234: xor eax, eax
+236: push rax
+237: push rax
+238: push rcx
+239: push rbx
+240: mov edx, dword ptr [rbx]
+242: mov ecx, dword ptr [rdx + 0x50]
+245: call rcx
+247: int3 
